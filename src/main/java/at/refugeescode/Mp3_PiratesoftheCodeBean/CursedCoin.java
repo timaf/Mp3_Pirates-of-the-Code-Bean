@@ -1,4 +1,4 @@
-package main.java.at.refugeescode.Mp3_PiratesoftheCodeBean;
+package at.refugeescode.Mp3_PiratesoftheCodeBean;
 
 public class CursedCoin {
     private static String place = "east";
@@ -7,5 +7,7 @@ public class CursedCoin {
         return place;
     }
 
-
+    public static void setPlace(String place) {
+        CursedCoin.place = place;
+    }
 }

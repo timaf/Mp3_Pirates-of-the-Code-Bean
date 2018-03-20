@@ -1,7 +1,8 @@
-package main.java.at.refugeescode.Mp3_PiratesoftheCodeBean;
+package at.refugeescode.Mp3_PiratesoftheCodeBean;
+
 
 public class JackSparrow {
-    private Compass compass;
+    private Compass compass = new Compass();
 
     public Compass getCompass() {
         return compass;
@@ -11,11 +12,7 @@ public class JackSparrow {
         this.compass = compass;
     }
 
-    public void JackWantsCursedCoin(){
-        if (compass.findCoin()){
-            System.out.println("I got it....");
-        }else{
-            System.out.println("Try again Compass");
-        }
+    public boolean JackWantsCursedCoin(){
+        return (compass.findCoin());
     }
 }

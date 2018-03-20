@@ -1,4 +1,4 @@
-package main.java.at.refugeescode.Mp3_PiratesoftheCodeBean;
+package at.refugeescode.Mp3_PiratesoftheCodeBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,13 @@ public class Compass {
     public static List<String> asList(){
         return new ArrayList <>(indicators);
     }
+
     public boolean findCoin(){
-        List<String> directions = Compass.asList();
-        int randomIndex = random.nextInt(directions.size());
-        String direction = directions.get(randomIndex);
-        return (CursedCoin.getplace() == direction);
+    List<String> directions = Compass.asList();
+    int randomIndex = random.nextInt(directions.size());
+    String direction = directions.get(randomIndex);
+    System.out.println("My direction now is :"+ direction);
+    return (CursedCoin.getplace() == direction);
     }
 }
+
